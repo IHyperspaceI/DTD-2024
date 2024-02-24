@@ -48,12 +48,15 @@ public class DTD2024TeleOp2 extends LinearOpMode {
         while(opModeIsActive()) {
             WiringConnections m_wiringConnections = new WiringConnections();
 
-            DTD2024MecanumChassis chassis = new DTD2024MecanumChassis(
+            DTD2024MecanumChassis m_chassis = new DTD2024MecanumChassis(
                     hardwareMap.get(DcMotor.class, m_wiringConnections.frontLeftMotorName),
                     hardwareMap.get(DcMotor.class, m_wiringConnections.frontRightMotorName),
                     hardwareMap.get(DcMotor.class, m_wiringConnections.backLeftMotorName),
                     hardwareMap.get(DcMotor.class, m_wiringConnections.backRightMotorName),
                     strafeSpeedTune);
+
+            // Initializes the hanger with the specified motor
+            DTD2024Hanger m_hanger = new DTD2024Hanger(hardwareMap.get(DcMotor.class, m_wiringConnections.hangerName));
 
             // Gamepad input, if statements are for deadzones
             forwardBackValue = Math.abs(helmGamepad.left_stick_y) >= joystickDeadzone // Condition
@@ -76,9 +79,12 @@ public class DTD2024TeleOp2 extends LinearOpMode {
             telemetry.addData("Status", helmGamepad.right_stick_x);
             telemetry.update();
 
-            chassis.setForwardBackValue(forwardBackValue);
-            chassis.setSideToSideValue(sideToSideValue);
-            chassis.setRotationValue(rotationValue);
+            m_chassis.setForwardBackValue(forwardBackValue);
+            m_chassis.setSideToSideValue(sideToSideValue);
+            m_chassis.setRotationValue(rotationValue);
+
+            // Moves the hanger
+            m_hanger.move(linearPower);
         }
     }
 }
