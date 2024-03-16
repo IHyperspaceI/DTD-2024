@@ -76,7 +76,7 @@ public class DTD2024TeleOp2 extends LinearOpMode {
                     ? (weaponsGamepad.right_stick_y * Math.abs(weaponsGamepad.right_stick_y) - joystickDeadzone) * placementLinearSpeed // True
                     : 0; // False
 
-            telemetry.addData("Status", helmGamepad.right_stick_x);
+            telemetry.addData("Status", "\nLX: " + helmGamepad.left_stick_x + "\nLY: " + helmGamepad.left_stick_y + "\nRX: " + helmGamepad.right_stick_x + "\nRY: " + helmGamepad.right_stick_y + "\nSanity: -5");
             telemetry.update();
 
             m_chassis.setForwardBackValue(forwardBackValue);

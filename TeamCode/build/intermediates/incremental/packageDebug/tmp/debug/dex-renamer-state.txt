@@ -1,11 +1,11 @@
-#Fri Jan 26 16:31:21 MST 2024
-base.0=/Users/hyperspace/Desktop/Java/Robotics/FtcRobotController-master/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/Users/hyperspace/Desktop/Java/Robotics/FtcRobotController-master/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/10/classes.dex
-base.2=/Users/hyperspace/Desktop/Java/Robotics/FtcRobotController-master/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/11/classes.dex
-base.3=/Users/hyperspace/Desktop/Java/Robotics/FtcRobotController-master/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/8/classes.dex
-base.4=/Users/hyperspace/Desktop/Java/Robotics/FtcRobotController-master/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.5=/Users/hyperspace/Desktop/Java/Robotics/FtcRobotController-master/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex
-base.6=/Users/hyperspace/Desktop/Java/Robotics/FtcRobotController-master/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+#Fri Mar 15 20:43:53 MDT 2024
+base.0=/Users/hyperspace/Desktop/Java/Robotics/DTD-2024/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/Users/hyperspace/Desktop/Java/Robotics/DTD-2024/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/10/classes.dex
+base.2=/Users/hyperspace/Desktop/Java/Robotics/DTD-2024/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/11/classes.dex
+base.3=/Users/hyperspace/Desktop/Java/Robotics/DTD-2024/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/8/classes.dex
+base.4=/Users/hyperspace/Desktop/Java/Robotics/DTD-2024/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.5=/Users/hyperspace/Desktop/Java/Robotics/DTD-2024/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex
+base.6=/Users/hyperspace/Desktop/Java/Robotics/DTD-2024/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
 path.0=classes.dex
 path.1=10/classes.dex
 path.2=11/classes.dex

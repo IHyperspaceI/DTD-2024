@@ -7,8 +7,8 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import java.util.Timer;
 import java.util.TimerTask;
 
-// 1.5 forward - short
-// 1 left 3.5 forward - long
+// 2s forward - short
+// 2s left 5s forward - long
 
 //@Disabled
 @Autonomous
@@ -33,11 +33,20 @@ public class DTD2024AutoShort extends LinearOpMode {
 
 		while (elapsedTime < time) {
 			elapsedTime = System.currentTimeMillis() - startTime;
+
+			// Tell driver about the robot
+			telemetry.addData("Status", "Sanity: " + (-elapsedTime));
+			telemetry.update();
 		}
 	}
 
 	// Actually run the robot
 	public void runOpMode() {
+		// Tell driver about the robot
+		telemetry.addData("Status", "Sanity: -5.0");
+		telemetry.update();
+
+
 		WiringConnections m_wiringConnections = new WiringConnections();
 
 		DTD2024MecanumChassis chassis = new DTD2024MecanumChassis(
